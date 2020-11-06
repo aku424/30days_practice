@@ -1,0 +1,797 @@
+@charset "UTF-8";
+* {
+  font-family: "ヒラギノ明朝 ProN ", serif;
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.687;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+.section {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.main-btn-area {
+  text-align: center;
+}
+
+.main-btn-area .main-btn {
+  display: inline-block;
+  padding: 10px 52px;
+  background-color: #FFFFFF;
+  color: #3EA1D1;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+  border: 1px solid #3EA1D1;
+}
+
+.main-btn-area .main-btn:hover {
+  background-color: #3EA1D1;
+  color: #FFFFFF;
+}
+
+.header-tab {
+  height: 70px;
+  background-color: #FFFFFF;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  padding: 0 40px;
+  align-items: center;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 768px) {
+  .header-tab {
+    display: block;
+  }
+}
+
+.header-tab .header-left {
+  height: 70px;
+  margin-right: auto;
+}
+
+.header-tab .header-left img {
+  width: 120px;
+  padding: 24px 0;
+}
+
+.header-tab .drawer-hamburger {
+  right: 40px;
+}
+
+.header-pc {
+  z-index: 9999;
+  height: 70px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .header-pc {
+    display: none;
+  }
+}
+
+.header-pc .header-inner {
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 70px;
+  align-items: center;
+  display: flex;
+}
+
+.header-pc .header-inner .header-right img {
+  width: 120px;
+}
+
+.header-pc .header-inner .header-right {
+  margin-left: auto;
+  display: flex;
+}
+
+.header-pc .header-inner .header-right li {
+  margin-left: 46px;
+}
+
+.header-pc .header-inner .header-right li:first-child {
+  margin-left: 0;
+}
+
+.header-pc .header-inner .header-right li .header-item {
+  color: #333333;
+  text-decoration: none;
+}
+
+.header-pc .header-inner .header-right li .header-item:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.main-view {
+  padding-top: 70px;
+}
+
+.main-view .section {
+  display: flex;
+}
+
+.main-view .section .main-view-left {
+  position: relative;
+  width: 210px;
+}
+
+.main-view .section .main-view-left .main-view-text-box {
+  position: absolute;
+  background-color: #FFFFFF;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  width: 330px;
+  height: 330px;
+  padding: 92px 0;
+}
+
+.main-view .section .main-view-left .main-view-text-box .main-view-title {
+  font-size: 26px;
+  margin-bottom: 14px;
+}
+
+.main-view .section .main-view-right {
+  width: calc(100% -210px);
+}
+
+.concept-area .section .section-title {
+  font-family: "Hiragino Mincho Pro",serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 150px;
+  position: relative;
+  margin-bottom: 105px;
+}
+
+.concept-area .section .section-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #3EA1D1;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.concept-area .section .concept-inner {
+  display: flex;
+  height: 400px;
+}
+
+.concept-area .section .concept-inner .concept-left {
+  width: 100%;
+  height: auto;
+}
+
+.concept-area .section .concept-inner .concept-right {
+  margin-left: 75px;
+  position: relative;
+  width: 100%;
+}
+
+.concept-area .section .concept-inner .concept-right .concept-right-inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.concept-area .section .concept-inner .concept-right .concept-right-inner .concept-right-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.feature-area .section .section-title {
+  font-family: "Hiragino Mincho Pro",serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 150px;
+  position: relative;
+  margin-bottom: 105px;
+}
+
+.feature-area .section .section-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #3EA1D1;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feature-area .section .feature-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-area .section .feature-cards .feature-card {
+  width: calc(100%-180/3);
+  height: 340px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-area .section .feature-cards .feature-card img {
+  width: 100%;
+  height: 240px;
+}
+
+.feature-area .section .feature-cards .feature-card .card-text-area {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  text-align: center;
+}
+
+.feature-area .section .feature-cards .feature-card .card-text-area .card-text {
+  width: 100%;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.feature-area .section .feature-cards .card-center {
+  margin: 0 90px;
+}
+
+.middle-view {
+  margin-top: 150px;
+  background-image: url(../img/bg.png);
+  background-size: cover;
+  width: 100%;
+  height: 478px;
+  padding-left: 40px;
+  position: relative;
+}
+
+.middle-view .middle-view-text-area {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.middle-view .middle-view-text-area .middle-view-title {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.middle-view .middle-view-text-area .middle-view-text {
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.products-area .section .section-title {
+  font-family: "Hiragino Mincho Pro",serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 150px;
+  position: relative;
+  margin-bottom: 105px;
+}
+
+.products-area .section .section-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #3EA1D1;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.products-area .section .product-cards {
+  display: flex;
+  margin-bottom: 45px;
+}
+
+.products-area .section .product-cards .product-center {
+  margin: 0 80px;
+}
+
+.products-area .section .product-cards .product-card {
+  margin: 0 auto;
+  width: 260px;
+}
+
+.products-area .section .product-cards .product-card img {
+  width: 100%;
+  height: 260px;
+}
+
+.products-area .section .product-cards .product-card .card-text {
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 20px;
+}
+
+.products-area .section .product-cards .product-card .product-price {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #989898;
+}
+
+.news-area .section {
+  padding: 0 120px;
+}
+
+.news-area .section .section-title {
+  font-family: "Hiragino Mincho Pro",serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 150px;
+  position: relative;
+  margin-bottom: 105px;
+}
+
+.news-area .section .section-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #3EA1D1;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.news-area .section .news-items {
+  margin-bottom: 48px;
+}
+
+.news-area .section .news-items .news-item {
+  border-bottom: 1px solid #E0E0E0;
+  display: flex;
+  padding: 23px 0;
+  position: relative;
+}
+
+.news-area .section .news-items .news-item .news-img {
+  width: 260px;
+  height: 160px;
+}
+
+.news-area .section .news-items .news-item .news-text-area {
+  width: calc(100%-260px);
+  position: absolute;
+  top: 50%;
+  left: 300px;
+  transform: translateY(-50%);
+}
+
+.news-area .section .news-items .news-item .news-text-area .news-day {
+  font-size: 14px;
+}
+
+.news-area .section .news-items .news-item .news-text-area .news-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 13px;
+  margin-bottom: 20px;
+}
+
+.news-area .section .news-items .news-item .news-text-area .news-text {
+  font-size: 14px;
+  color: #888888;
+}
+
+.end-view {
+  margin-top: 150px;
+  margin-bottom: 210px;
+}
+
+.end-view .section {
+  display: flex;
+}
+
+.end-view .section .end-left {
+  width: 100%;
+  position: relative;
+}
+
+.end-view .section .end-left .end-left-inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.end-view .section .end-left .end-left-inner .end-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 46px;
+}
+
+.end-view .section .end-left .end-left-inner .end-text {
+  width: 520px;
+  letter-spacing: 0;
+}
+
+.contact-area {
+  background-image: url(../img/contact.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.contact-area .section {
+  padding: 65px 0 75px 0;
+}
+
+.contact-area .section .section-title {
+  font-family: "Hiragino Mincho Pro",serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 150px;
+  position: relative;
+  margin-bottom: 105px;
+  margin-top: 0;
+  color: #3EA1D1;
+}
+
+.contact-area .section .section-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: #3EA1D1;
+  bottom: -15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact-area .section .contact-form {
+  text-align: center;
+}
+
+.contact-area .section .contact-form .must-mark-example {
+  color: #E7728E;
+  font-size: 16px;
+}
+
+.contact-area .section .contact-form .contact-advice {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-area .section .contact-form form .contact-item {
+  width: 510px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.contact-area .section .contact-form form .contact-item .contact-label {
+  width: 180px;
+  height: 40px;
+  display: block;
+  margin-right: 14px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Hiragino Mincho Pro", serif;
+  background-color: #6EB5D7;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  border: 1 solid #6EB5D7;
+}
+
+.contact-area .section .contact-form form .contact-item .contact-label::after {
+  position: absolute;
+  top: 0;
+  right: -8px;
+  content: '';
+  border-width: 20px 0 20px 8px;
+  border-style: solid;
+  border-color: transparent  transparent transparent #6EB5D7;
+}
+
+.contact-area .section .contact-form form .contact-item .contact-label .must-mark {
+  color: #E7728E;
+  font-size: 12px;
+  vertical-align: super;
+  line-height: 1;
+}
+
+.contact-area .section .contact-form form .name-area input, .contact-area .section .contact-form form .email-area input {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.4em 0.8em;
+  width: 100%;
+  box-shadow: 6px 1px 6px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  background-color: #FFFFFF;
+}
+
+.contact-area .section .contact-form form .name-area input:focus, .contact-area .section .contact-form form .email-area input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  box-shadow: none;
+  outline: none;
+}
+
+.contact-area .section .contact-form form .name-area input:focus, .contact-area .section .contact-form form .email-area input:focus {
+  outline: 3px solid #3EA1D1;
+}
+
+.contact-area .section .contact-form form .group-area .group-inner {
+  width: 160px;
+  display: flex;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #FFFFFF;
+}
+
+.contact-area .section .contact-form form .group-area .group-inner div {
+  position: relative;
+  flex: 1;
+}
+
+.contact-area .section .contact-form form .group-area .group-inner div input {
+  width: 100%;
+  height: 30px;
+  opacity: 0;
+}
+
+.contact-area .section .contact-form form .group-area .group-inner div label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #3EA1D1;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.contact-area .section .contact-form form .group-area .group-inner div input:checked + label {
+  background: #3EA1D1;
+  color: #FFFFFF;
+}
+
+.contact-area .section .contact-form form .contact-text-area textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  padding: 0.4em 0.8em;
+  width: 100%;
+  box-shadow: 6px 1px 6px rgba(0, 0, 0, 0.1);
+  height: 122px;
+  width: 320px;
+  background-color: #FFFFFF;
+}
+
+.contact-area .section .contact-form form .contact-text-area textarea:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  box-shadow: none;
+  outline: none;
+}
+
+.contact-area .section .contact-form form .contact-text-area textarea:focus {
+  outline: 3px solid #3EA1D1;
+}
+
+.contact-area .section .contact-form form .check-area label {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-area .section .contact-form form .check-area label input[type="checkbox"] {
+  display: none;
+}
+
+.contact-area .section .contact-form form .check-area label input[type="checkbox"] + span {
+  position: relative;
+}
+
+.contact-area .section .contact-form form .check-area label input[type="checkbox"] + span a {
+  color: #3EA1D1;
+  text-decoration: underline;
+}
+
+.contact-area .section .contact-form form .check-area label input[type="checkbox"] + span a:hover {
+  opacity: 0.7;
+}
+
+.contact-area .section .contact-form form .check-area label input[type="checkbox"] + span:focus {
+  outline: 3px solid #3EA1D1;
+}
+
+.contact-area .section .contact-form form .check-area label input[type="checkbox"] + span:hover::before {
+  border: 3px solid #3EA1D1;
+}
+
+.contact-area .section .contact-form form .check-area label input[type="checkbox"] + span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #3EA1D1;
+  top: 50%;
+  left: -30px;
+  transform: translate(-50%, -50%);
+  transition: all 0.15s, border-color 0.08s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.contact-area .section .contact-form form .check-area label input[type="checkbox"]:checked + span:before {
+  width: 10px;
+  transform: rotate(45deg);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  top: -5px;
+  left: -30px;
+}
+
+.contact-area .section .contact-form form .btn-area {
+  text-align: center;
+}
+
+.contact-area .section .contact-form form .btn-area .submit-btn {
+  -webkit-appearance: none;
+  background-color: rgba(0, 0, 0, 0.32);
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 0 1em;
+  padding: 0.6em 2em;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  color: #3EA1D1;
+  padding: 10px 52px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+  border: 1px solid #3EA1D1;
+}
+
+.contact-area .section .contact-form form .btn-area .submit-btn:hover {
+  outline: none;
+}
+
+.contact-area .section .contact-form form .btn-area .submit-btn:focus {
+  outline: none;
+}
+
+.contact-area .section .contact-form form .btn-area .submit-btn::-moz-foucus-inner {
+  border: none;
+  padding: 0;
+}
+
+.contact-area .section .contact-form form .btn-area .submit-btn .active {
+  color: #FFFFFF;
+  background-color: #3EA1D1;
+}
+
+.contact-area .section .success-message {
+  text-align: center;
+  display: none;
+}
+
+.contact-area .section .error-message {
+  text-align: center;
+}
+
+.contact-area .section .error-message p {
+  color: red;
+  display: none;
+}
+
+footer {
+  background-color: #F7F7F7;
+  height: 220px;
+  text-align: center;
+  font-size: 12px;
+  padding: 45px 0 15px 0;
+}
+
+footer img {
+  width: 120px;
+}
+
+footer .footer-private {
+  margin-top: 24px;
+}
+
+footer .footer-private .footer-private-text {
+  justify-content: center;
+  display: flex;
+}
+
+footer .footer-private .footer-private-text P:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+footer .footer-private .footer-private-text P:first-child {
+  margin-right: 32px;
+}
+
+footer .footer-private .footer-sns-icons {
+  margin: 36px 0 24px 0;
+}
+
+footer .footer-private .footer-sns-icons .sns-item {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+footer .footer-private .footer-sns-icons .sns-item:first-child {
+  margin-left: 0;
+}
+
+footer .footer-private .footer-sns-icons .sns-item i {
+  color: #3EA1D1;
+  font-size: 24px;
+}
+
+footer .footer-private .footer-sns-icons .sns-item i:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+footer .footer-private .footer-copy-light {
+  color: #888888;
+}
