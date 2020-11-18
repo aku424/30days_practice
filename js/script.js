@@ -58,42 +58,13 @@ $(document).ready(function() {
         $('#js-form input[type="email"]').val() !== "" &&
         $('#js-form input[name="entry.1815363710"]').prop("checked") === true
       ){
-         //   $submit.css("color","#fff");
-         //   $submit.css("background-color"," #3EA1D1");
-          $submit.addClass('.active');
+         $submit.css("color","#fff");
+         $submit.css("background-color"," #3EA1D1");
+        //   $submit.addClass('.active');
       } else{
-        $submit.removeClass('.active');
-        // $submit.css("color","#3EA1D1");
-        // $submit.css("background-color"," #fff");
+        $submit.css("color","#3EA1D1");
+        $submit.css("background-color"," #fff");
+        // $submit.removeClass('.active');
       }
     })
-   //  お問い合わせのボタンの実装
-   // 最初は送信ボタンが反応しませんよという設定
-   // $(".submit-btn").prop("disabled",true);
-   //    //インプットに入力がされたら起動して、埋まっているかのチェック  
-   //    $('form :required').change(function () {
-   //       //必須項目が空かどうかフラグ
-   //       let flag = true;
-   //       //必須項目をひとつずつチェック
-   //       $('form :required').each(function(e) {
-   //           //もし必須項目が空なら
-   //           if ($('form :required').eq(e).val() === "") {
-   //               flag = false;
-   //           }
-   //       });
-   //       $('.check-box').click(function(){
-   //          if ($(this).prop('clicked') == false){
-   //             flag = false;
-   //          }
-   //       });
-   //       //全て埋まっていたら
-   //       if (flag) {
-   //           //送信ボタンを復活
-   //           $('.submit-btn').prop("disabled", false);
-   //       }
-   //       else {
-   //           //送信ボタンを閉じる
-   //           $('.submit-btn').prop("disabled", true);
-   //       }
-   //   });
   });

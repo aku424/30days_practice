@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-  font-family: "ヒラギノ明朝 ProN ", serif;
+  font-family: "ヒラギノ明朝 ProN ", 'Noto Serif JP', serif;
   font-size: 16px;
   color: #333333;
   line-height: 1.687;
@@ -124,6 +124,11 @@ img {
   text-decoration: none;
 }
 
+.header-pc .header-inner .header-right li .header-item:hover {
+  color: #3EA1D1;
+  opacity: 0.7;
+}
+
 .main-view {
   padding-top: 70px;
 }
@@ -153,7 +158,7 @@ img {
   margin-bottom: 14px;
 }
 
-.main-view .section .main-view-right {
+.main-view .section .main-view-left .main-view-right {
   width: calc(100% -210px);
 }
 
@@ -179,9 +184,21 @@ img {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+  .concept-area .section .section-title {
+    margin-top: 80px;
+  }
+}
+
 .concept-area .section .concept-inner {
   display: flex;
   height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  .concept-area .section .concept-inner {
+    display: block;
+  }
 }
 
 .concept-area .section .concept-inner .concept-left {
@@ -229,6 +246,12 @@ img {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+  .feature-area .section .section-title {
+    margin-top: 80px;
+  }
+}
+
 .feature-area .section .feature-cards {
   display: flex;
   justify-content: space-between;
@@ -238,11 +261,23 @@ img {
   width: calc(100%-180/3);
   height: 340px;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
 }
 
-.feature-area .section .feature-cards .feature-card img {
+.feature-area .section .feature-cards .feature-card:hover .feature-img img {
+  transform: scale(1.1, 1.1);
+}
+
+.feature-area .section .feature-cards .feature-card .feature-img {
   width: 100%;
   height: 240px;
+  overflow: hidden;
+}
+
+.feature-area .section .feature-cards .feature-card .feature-img img {
+  width: 100%;
+  transition: all 0.3s ease 0s;
 }
 
 .feature-area .section .feature-cards .feature-card .card-text-area {
@@ -316,6 +351,12 @@ img {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+  .products-area .section .section-title {
+    margin-top: 80px;
+  }
+}
+
 .products-area .section .product-cards {
   display: flex;
   margin-bottom: 45px;
@@ -328,11 +369,23 @@ img {
 .products-area .section .product-cards .product-card {
   margin: 0 auto;
   width: 260px;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
 }
 
-.products-area .section .product-cards .product-card img {
+.products-area .section .product-cards .product-card:hover .product-card-img img {
+  transform: scale(1.1, 1.1);
+}
+
+.products-area .section .product-cards .product-card .product-card-img {
   width: 100%;
   height: 260px;
+  overflow: hidden;
+}
+
+.products-area .section .product-cards .product-card .product-card-img img {
+  transition: all 0.4s ease 0s;
+  width: 100%;
 }
 
 .products-area .section .product-cards .product-card .card-text {
@@ -373,6 +426,12 @@ img {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 768px) {
+  .news-area .section .section-title {
+    margin-top: 80px;
+  }
+}
+
 .news-area .section .news-items {
   margin-bottom: 48px;
 }
@@ -382,11 +441,22 @@ img {
   display: flex;
   padding: 23px 0;
   position: relative;
+  cursor: pointer;
+}
+
+.news-area .section .news-items .news-item:hover .news-img img {
+  transform: scale(1.1, 1.1);
 }
 
 .news-area .section .news-items .news-item .news-img {
+  overflow: hidden;
   width: 260px;
   height: 160px;
+}
+
+.news-area .section .news-items .news-item .news-img img {
+  width: 100%;
+  transition: all 0.4s ease 0s;
 }
 
 .news-area .section .news-items .news-item .news-text-area {
@@ -476,6 +546,12 @@ img {
   bottom: -15px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-area .section .section-title {
+    margin-top: 80px;
+  }
 }
 
 .contact-area .section .contact-form {
